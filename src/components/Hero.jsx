@@ -42,7 +42,7 @@ const Hero = () => {
         <motion.img
         initial={{ x: 100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1, delay: 1.5 }}
+        transition={{ duration: 1, delay: 1 }}
          src={profilePic} alt="Prathiksha Shetty" width={470} height={470}  
         style={{ borderRadius: '16px' }}
         className='mt-2'
