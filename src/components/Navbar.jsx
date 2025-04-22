@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Navbar = () => {
 
   const downloadResume = () => {
-    const resumeUrl = 'https://drive.google.com/uc?export=download&id=1ef_eAH_w-PjQ7-USlMKJwFoPmr0uBoIf';
+    const resumeUrl = 'https://drive.google.com/uc?export=download&id=1yR-fht--dffTdTi7IIqxtoRiyCUV-BQ_';
     const link = document.createElement('a');
     link.href = resumeUrl;
     link.download = 'PrathikshaShetty.pdf';
