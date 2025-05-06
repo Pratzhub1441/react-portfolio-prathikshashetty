@@ -13,6 +13,7 @@ const Navbar = () => {
     link.click();
   };
 
+  
   return (
    <>
    <motion.nav
