@@ -6,14 +6,13 @@ import { motion } from "framer-motion";
 const Navbar = () => {
 
   const downloadResume = () => {
-    const resumeUrl = 'https://drive.google.com/uc?export=download&id=1Y4IQ-pEBe12LEWwHqQbaZBxj7bwT3c-g';
+    const resumeUrl = 'https://drive.google.com/uc?export=download&id=1A5UJ4eF2ZsOgIUWpY2K75Bc8CIrNVeOD';
     const link = document.createElement('a');
     link.href = resumeUrl;
     link.download = 'PrathikshaShetty.pdf';
     link.click();
   };
 
-  
   return (
    <>
    <motion.nav
@@ -41,4 +40,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;
