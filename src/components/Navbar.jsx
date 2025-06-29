@@ -3,15 +3,11 @@ import { FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
-  // direct-download URL (file-ID pulled from your new Drive link)
   const RESUME_URL =
-    "https://drive.google.com/uc?export=download&id=1LbVMrTPU8Ydjj8jbZTcO59hpkRKQKI7h";
+    "https://drive.google.com/file/d/1LbVMrTPU8Ydjj8jbZTcO59hpkRKQKI7h/view?usp=sharing";
 
-  const downloadResume = () => {
-    const link = document.createElement("a");
-    link.href = RESUME_URL;
-    link.download = "PrathikshaShetty-Resume.pdf";
-    link.click();
+  const openResume = () => {
+    window.open(RESUME_URL, "_blank");
   };
 
   return (
@@ -25,11 +21,11 @@ const Navbar = () => {
         <div className="flex flex-shrink-0 items-center text-[60px] font-medium gap-8">
           Ps
           <button
-            onClick={downloadResume}
+            onClick={openResume}
             className="bg-transparent text-white py-2 px-4 rounded hover:bg-neutral-800 text-sm transition-all mt-2"
             style={{ border: "0.1px solid rgba(255, 255, 255, 0.4)" }}
           >
-            Download Resume
+            View Resume
           </button>
         </div>
 
